@@ -10,6 +10,18 @@ FROM base
 # --- Install your dependencies below ---
 # Example: RUN pip install anthropic httpx networkx
 # Example: RUN npm install -g tsx && npm install openai
+RUN apt-get update && apt-get install -y \
+    curl \
+    dnsutils \
+    nmap
+
+RUN pip install \
+    openai \
+    httpx \
+    networkx \
+    pandas \
+    numpy
+
 
 # --- Copy your code ---
 COPY . /rover/

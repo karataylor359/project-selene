@@ -9,5 +9,6 @@
 #
 # Analyze the map and produce a Markdown report on your findings.
 
-echo "TODO: implement your reporting agent"
+echo "RUNNING REPORTING AGENT"
+python reporting.py
 exit 1

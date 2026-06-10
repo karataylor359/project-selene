@@ -9,5 +9,6 @@
 #
 # The JSON structure is up to you — design it for downstream analysis.
 
-echo "TODO: implement your mapping agent"
+echo "RUNNING MAPPING AGENT"
+python mapping.py
 exit 1
